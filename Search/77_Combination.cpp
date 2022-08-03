@@ -1,6 +1,5 @@
 #include <stdc++.h>
 using namespace std;
-
 // 给定一个整数n 和一个整数k，求在1 到n 中选取m 个数字的所有组合方法。
 
 void backTracking(vector<vector<int>>& ans, int& count,int n,int m, int pos, vector<int>& comb){
