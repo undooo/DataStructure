@@ -22,7 +22,8 @@ struct ListNode
 	则做差得
 	i_s = (b-a)L; 即
 	m+n = (b-2a)L
-	令slow返回head，两个指针同时向前走，当走m步时，两点都位于节点
+	slow走m步，到达环点
+	fast此时在环点前n步，再走m步即为m+n，由上式可知m+n是环的整数倍，所以走完后fast也必在环点
  */
 
 ListNode * detect(ListNode * head){
