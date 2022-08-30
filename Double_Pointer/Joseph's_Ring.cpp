@@ -2,16 +2,21 @@
 using namespace std;
 
 int lastRemaining_Recursive(int x, int y);
+int lastRemaining_Recursive_for(int x, int y);
+
 int lastRemaining_CircularList(int x, int y);
 
 int main()
 {	
-
-	int x1=lastRemaining_Recursive(1,1);
-	int x2=lastRemaining_CircularList(1,1);
-	cout<< x1<<"---"<<endl;
+	for(int i=1;i<9;i++){
+		for(int j=1;j<9;j++){
+			int x1=lastRemaining_Recursive(i,j);
+			int x2=lastRemaining_Recursive_for(i,j);
+			cout<< x1<<"---"<<x2<<endl;			
+		}
+	}
 	
-	cout<< x2<<"---"<<endl;
+	
 
 	return 0;
 }
@@ -44,8 +49,14 @@ int lastRemaining_Recursive(int n, int m){
 	return (lastRemaining_Recursive(n-1,m)+m)%n;
 }
 
-
-//常规循环链表
+int lastRemaining_Recursive_for(int n, int m){
+	int res = 0;
+	for(int i=1;i<=n;i++){
+		res = (res+m)%i;
+	}
+	return res;
+}
+//常规循环链表8
 struct ListNode
 {
 	int val;
