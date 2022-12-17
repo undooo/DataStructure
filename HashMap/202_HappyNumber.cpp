@@ -4,7 +4,7 @@ using namespace std;
 //判断一个数是不是快乐数：
 //replace the number by the sum of the squares of its digits
 //Those numbers for which this process ends in 1 are happy
-
+            
 class Solution {
 public:
 

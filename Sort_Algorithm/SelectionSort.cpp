@@ -1,4 +1,4 @@
-#include <stdc++.h>
+ #include <stdc++.h>
 using namespace std;
 
 //思想为：每次挑选出一个最值，只交换一次

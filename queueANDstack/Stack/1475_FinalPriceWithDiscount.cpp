@@ -39,7 +39,7 @@ public:
             ans[i] = st.empty()? prices[i]:prices[i]-st.top();
             st.emplace(prices[i]);
         }
-        return ans;
+        return ans; 
     }
 };
 
