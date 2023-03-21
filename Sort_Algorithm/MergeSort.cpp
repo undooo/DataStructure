@@ -1,4 +1,4 @@
-#include <stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 //归并排序：核心思想是分治

@@ -1,6 +1,6 @@
-#include <stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-// ¸ø¶¨Ò»¸öÕûÊın ºÍÒ»¸öÕûÊık£¬ÇóÔÚ1 µ½n ÖĞÑ¡È¡m ¸öÊı×ÖµÄËùÓĞ×éºÏ·½·¨¡£
+// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½n ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1 ï¿½ï¿½n ï¿½ï¿½Ñ¡È¡m ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½
 
 void backTracking(vector<vector<int>>& ans, int& count,int n,int m, int pos, vector<int>& comb){
 	if(count == m){
@@ -8,7 +8,7 @@ void backTracking(vector<vector<int>>& ans, int& count,int n,int m, int pos, vec
 		return;
 	}
 
-	//³¢ÊÔ½«ÏÂÒ»¸öÊı×Ö·Å½øcombÖĞ
+	//ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ö·Å½ï¿½combï¿½ï¿½
 	for(int i=pos;i<=n;i++){
 		comb[count++] = i;
 		backTracking(ans,count,n,m,i+1,comb);

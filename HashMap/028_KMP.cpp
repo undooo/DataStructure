@@ -1,7 +1,7 @@
-#include<stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-
+const int N = 1010;
 //整体减一的方法对应的next数组
 void get_next_array(int * next, const string & s){
 	int j=-1;
@@ -22,7 +22,7 @@ int kmp(string & haystack, string & needle){
 	if(needle.size() == 0){
 		return -1;
 	}
-	int next[needle.size()];
+	int next[N];
 	get_next_array(next, needle);
 
 	int j=-1;

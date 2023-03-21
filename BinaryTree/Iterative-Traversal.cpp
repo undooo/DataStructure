@@ -1,4 +1,4 @@
-#include<stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 struct TreeNode{
@@ -19,8 +19,8 @@ vector<int> preOrderTraversal(TreeNode* root){
 		TreeNode * node = st.top();
 		st.pop();
 		result.push_back(node->val);
-		if(node->right) st.push_back(node->right);
-		if(node->left)  st.push_back(node->left);
+		if(node->right) st.push(node->right);
+		if(node->left)  st.push(node->left);
 	}
 	return result;
 }
